@@ -30,7 +30,7 @@ VLSI (Very Large Scale Integration) is the process of designing and manufacturin
 - [Day 4 - Pre-Layout timing analysis and importance and good clock tree](#day-4---pre-layout-timing-analysis-and-importance-and-good-clock-tree)
 - [Day 5 - Final steps for RTL2GDS using tritonRoute and openSTA](#day-5---final-steps-for-rtl2gds-using-tritonroute-and-opensta)
 ## Day 1 - Inception of open-source EDA, OpenLANE and Sky130 PDK
-### L1
+### Section 1
 Arduino is a popular example of an embedded development board which has ATMEGA328 microcontroller. Suppose we want to create an IC similar to this using the above flow. The GDSII obtained is sent to the foundry where the photomasks created for photolithography, a process used to etch the circuit patterns onto the silicon wafer. Multiple copies of the same circuit are etched onto the wafer, organized in a grid-like pattern. Once the circuits are fabricated onto the wafer, the wafer is cut into individual units. Each of these units is called a die. The die represents a complete integrated circuit (IC), and each **die** is a single functional unit of the circuit.
 <p align="center">
   <img src="https://github.com/user-attachments/assets/f17658ef-2a67-4e7b-8818-6f32d9aabadb" alt="Image 1" width="416">
@@ -76,7 +76,9 @@ System Software
 -	**Assembler**
     - The Assembly code from previous step is converted to binary language by the Assembler.
 
-### 
+### Section 2
+
+### Section 3
 ## Day 2 - Good floorplan vs bad floorplan and introduction to library cells
 ## Day 3 - Design library cell using Magic Layout and ngspice characterization
 ## Day 4 - Pre-Layout timing analysis and importance and good clock tree
