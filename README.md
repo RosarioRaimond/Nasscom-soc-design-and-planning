@@ -30,6 +30,53 @@ VLSI (Very Large Scale Integration) is the process of designing and manufacturin
 - [Day 4 - Pre-Layout timing analysis and importance and good clock tree](#day-4---pre-layout-timing-analysis-and-importance-and-good-clock-tree)
 - [Day 5 - Final steps for RTL2GDS using tritonRoute and openSTA](#day-5---final-steps-for-rtl2gds-using-tritonroute-and-opensta)
 ## Day 1 - Inception of open-source EDA, OpenLANE and Sky130 PDK
+### L1
+Arduino is a popular example of an embedded development board which has ATMEGA328 microcontroller. Suppose we want to create an IC similar to this using the above flow. The GDSII obtained is sent to the foundry where the photomasks created for photolithography, a process used to etch the circuit patterns onto the silicon wafer. Multiple copies of the same circuit are etched onto the wafer, organized in a grid-like pattern. Once the circuits are fabricated onto the wafer, the wafer is cut into individual units. Each of these units is called a die. The die represents a complete integrated circuit (IC), and each **die** is a single functional unit of the circuit.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f17658ef-2a67-4e7b-8818-6f32d9aabadb" alt="Image 1" width="416">
+  <img src="https://github.com/user-attachments/assets/fac3e2d7-cec2-4372-80db-6c4e4247b2bd" alt="Image 2" width="400">
+</p>
+
+The **die** is divided into two main sections: **pads** and the **core**.
+-	**Pads**: These form the interface between the circuit and the external world. They enable electrical connections for power, ground, and input/output (I/O) signals.
+-	**Core**: This houses the functional logic of the circuit. It comprises:
+    -	**IPs** **(Intellectual Properties)**: Pre-designed and verified complex blocks (e.g., processors, memory, or communication interfaces) provided by vendors (foundries or EDA tool providers) or developed in-house. These require advanced techniques to integrate and function properly.
+    -	**Macros**: Simpler blocks compared to IPs. These can be designed more easily and are often customized for specific functionalities.
+
+**Foundry**: A **foundry** is a specialized manufacturing facility that produces semiconductor wafers and integrated circuits (ICs) designed by other companies.
+After cutting, the individual dies are then encapsulated in a protective **package**. This is necessary for handling and connecting the die to the external world (such as through electrical pins or pads). The packages can be of different types. The most common IC package types are 
+1.	Dual In-Line Package (DIP)
+2.	Small Outline Package (SOP)
+3.	Quad Flat Package (QFP)
+4.	Quad Flat No-leads (QFN)
+5.	Ball Grid Array (BGA)
+6.	Chip Scale Package (CSP)
+7.	Dual Flat No-leads (DFN)
+8.	Quad Flat Package No-lead (QFN-ML)
+
+**Instruction Set Architecture(ISA):**\
+An Instruction Set Architecture (ISA) is the interface between a computer's hardware and software. It defines the set of instructions a processor can execute, including operations like arithmetic, data movement, and control flow. Example : x86, ARM , RISC-V
+
+**The Bigger Picture:**
+```mermaid
+graph TD;
+  subgraph B["System Software"]
+    D["OS"]-->E["Compiler"];
+    E["Compiler"]-->F["Assembler"];
+  end
+  A["Application Software"]-->B;
+  B-->C[Hardware];
+```
+An application software that we use on PCs or mobiles are converted into binary language(machine code) by the system software which is then executed by the hardware.
+System Software
+-	**Operating System(OS)**
+    -  Handle I/O operations, allocate memory, low level system functions
+-	**Compiler**
+    - Converts the application written in high level language(C, C++, Java) into assembly language of the respective ISA.
+-	**Assembler**
+    - The Assembly code from previous step is converted to binary language by the Assembler.
+
+### 
 ## Day 2 - Good floorplan vs bad floorplan and introduction to library cells
 ## Day 3 - Design library cell using Magic Layout and ngspice characterization
 ## Day 4 - Pre-Layout timing analysis and importance and good clock tree
