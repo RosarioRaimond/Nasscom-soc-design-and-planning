@@ -402,6 +402,9 @@ prep -design picorv32a
     ├── trimmed.lib
     └── trimmed.lib.exclude.list
 
+ <p>The config.tcl here is the final configuration that was used for the run. If you modify any of the variable mid flow, it will be updated in this file. This is a good checkpoint to verify effect of the changes. The cmds.log file takes a record of all the commands used in the flow. </p>
+
+
 ```
 
 </details>
@@ -411,8 +414,14 @@ prep -design picorv32a
 
 ```tcl
 
-# Run synthesis for the prepared design
+# Run synthesis(This will run the yosys and ABC)
 run_synthesis
+
+```
+
+[OpenLANE Resource](https://github.com/efabless/openlane2)
+
+```bash
 
 # Exit the OpenLANE flow interface
 exit
