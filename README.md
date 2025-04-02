@@ -419,7 +419,13 @@ run_synthesis
 
 ```
 
+  <p align="center">
+    <img src="https://github.com/user-attachments/assets/6afa12f1-e8ea-4d80-8d70-12b07fa8f5f0" width="700" />
+  </p> 
+
 [OpenLANE Resource](https://github.com/efabless/openlane2)
+[Youtube link1](https://www.youtube.com/watch?v=EczW2IWdnOM)
+[Youtube link2](https://www.youtube.com/watch?v=Vhyv0eq_mLU)
 
 ```bash
 
