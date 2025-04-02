@@ -295,7 +295,39 @@ Openlane has a configuration to select one of the two approaches to handle the a
 
 
 ### Section 3
-  [Directory Structure](directory_structure.md)
+  [Directory Structure](directory_structure.md)  Click at your own risk :)
+
+  T
+  
+```bash
+# cd into the openlane directory
+cd Desktop/work/tools/openlane_working_dir/openlane
+
+# Run the docker command to invoke the OpenLANE Docker container
+docker
+
+```
+```tcl
+# Launch the OpenLANE flow in interactive mode(-interactive switch is used to view the intermediate results)
+./flow.tcl -interactive
+
+# Import the required package
+package require openlane 0.9
+
+# Prepare the design environment for 'picorv32a' by creating necessary files and directories
+prep -design picorv32a
+
+# Run synthesis for the prepared design
+run_synthesis
+
+# Exit the OpenLANE flow interface
+exit
+
+# Exit the Docker container
+exit
+
+```
+  
 
 ## Day 2 - Good floorplan vs bad floorplan and introduction to library cells
 ## Day 3 - Design library cell using Magic Layout and ngspice characterization
