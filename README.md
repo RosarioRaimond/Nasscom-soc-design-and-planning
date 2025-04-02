@@ -326,7 +326,8 @@ prep -design picorv32a
 ```
 <details>
  <summary> Directory structure </summary>
-<p>Inside /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/02-04_16-06/ </p>
+ <p>Inside /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/02-04_16-06/ </p>
+ 
 ```bash
 .
 ├── cmds.log
