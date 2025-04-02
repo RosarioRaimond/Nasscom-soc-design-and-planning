@@ -306,10 +306,14 @@ cd Desktop/work/tools/openlane_working_dir/openlane
 # Run the docker command to invoke the OpenLANE Docker container
 docker
 
-```
-```tcl
 # Launch the OpenLANE flow in interactive mode(-interactive switch is used to view the intermediate results)
 ./flow.tcl -interactive
+```
+  <p align="center">
+    <img src="https://github.com/user-attachments/assets/b6fe0341-5ebc-4caa-9184-a216c2096347" width="600" />
+  </p> 
+
+```tcl
 
 # Import the required package
 package require openlane 0.9
