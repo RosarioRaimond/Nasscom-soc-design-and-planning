@@ -179,7 +179,8 @@ Once done with routing we can construct the final layout, which undergoes verifi
   - Layout v/s Schematic(LVS)
 - Timing Verification
   - Static Timing Analysis(STA)
-Can I build a chip using this flow?  
+
+**OpenLANE :** Can I build a chip using this flow?  
 This flow can be used with commercial EDA Tools. The problem is tougher when using opensource EDA
 - Tools qualification
 - Tools calibration
@@ -228,7 +229,69 @@ The design exploration utility is also used for regression testing(CI)
 We run openlane on ~70 designs and compare the results to the best known ones  
   <p align="center">
     <img src="https://github.com/user-attachments/assets/9587a278-7c1d-428a-80ab-d4d7e984c997" width="400" />
-  </p>
+  </p> 
+  
+**Design for Testing :** After synthesis comes the testing structure insertion, if we want our design to be ready for  testing after fabrication  we can enable this step which is optional. This step uses opensource project fault to perform 
+-	Scan insertion
+-	Automatic Test Pattern Generation (ATPG)
+-	Test Patterns Compaction
+-	Fault Coverage
+-	Fault Simulation
+  <p align="center">
+    <img src="https://github.com/user-attachments/assets/d8e67882-5d3d-4372-8649-3d411676f05d" width="700" />
+  </p> 
+  
+Adds extra logic, scan chain and data controller- access to scan chain  
+
+**Physical Implementation :** Also called automated PnR (Place and Route). We use openRoad app.    
+-	Floor/Power Planning
+-	End Decoupling Capacitors and Tap cells insertion
+-	Placement: Global and Detailed 
+-	Post placement optimization
+-	Vlock Tree Synthesis(CTS)
+-	Routing : Global and Detailed.
+
+**Logic equivalence checking(LEC)** using yosys: since the netlist generated from synthesis modigied by the optimizations, Logic equivalence check must be performed to ensure the functional equivalence
+Everytime the netlist is modified, verification must be performed
+-	CTS modifies the netlist
+-	Post Placement optimizations modifies the netlist
+LEC is used to formally confirm that the function did not change after modifying the netlist.
+
+**Antenna Rules Violation**  
+When a metal wire segment is fabricated, it can act as an antenna
+-	Reactive ion etching causes charge to accumulate on the wire
+-	Transistor gates can be damaged during the fabrication process.
+  <p align="center">
+    <img src="https://github.com/user-attachments/assets/1bca6465-139a-4da4-85be-13713941ba8e" width="500" />
+  </p> 
+
+Two solutions:
+-	Bridging attaches a higher layer intermediary
+  -	Requires router awareness(not there yet)
+-	Add antenna diode cell to leak away charges 
+  - Antenna diodes are provided by the SCL.
+  <p align="center">
+    <img src="https://github.com/user-attachments/assets/7d32d847-8396-481f-89a8-9fa4c2b1c5a8" width="600" />
+  </p> 
+  <p align="center">
+    <img src="https://github.com/user-attachments/assets/7b556867-3538-4233-85f2-c857cc1a7f92" width="600" />
+  </p> 
+
+We took a preventive approach
+-	Add a Fake antenna diode next to every cell input after placement
+-	Run the Antenna checker (Magic) on the routed layout
+-	If the checker reports a violation on the cell input pin, replace the Fake diode cell by a real one.
+Openlane has a configuration to select one of the two approaches to handle the antenna violations.
+  <p align="center">
+    <img src="https://github.com/user-attachments/assets/cb27ab3e-be0b-42a0-bd16-5f75802f8496" width="500" />
+  </p> 
+  
+**Signoff :** STA, DRC, LVS
+-	RC Extraction: DEF2SPEF
+-	STA: OpenSTA (OpenROAD)
+-	Magic si used for Design Rules Checking and the SPICE Extraction from Layout
+-	Magic and Netgen are used for LVS
+  -	Extracted SPICE by Magic vs Verilog netlist.
 
 
 ### Section 3
