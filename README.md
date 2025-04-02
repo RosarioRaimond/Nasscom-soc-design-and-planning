@@ -318,8 +318,17 @@ docker
 # Import the required package
 package require openlane 0.9
 
-# Prepare the design environment for 'picorv32a' by creating necessary files and directories
+# To prep the design use the following command
+prep -design <design_name>
 prep -design picorv32a
+#After executing check that the runs directory is created in the picorv32a(<design_name>) directory
+
+```
+  <p align="center">
+    <img src="https://github.com/user-attachments/assets/5e367506-be0c-494a-9527-986fa1a92b8e" width="600" />
+  </p> 
+
+```tcl
 
 # Run synthesis for the prepared design
 run_synthesis
