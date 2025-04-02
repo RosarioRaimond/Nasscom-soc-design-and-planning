@@ -3,7 +3,7 @@ VLSI (Very Large Scale Integration) is the process of designing and manufacturin
 ### VLSI design flow
  The VLSI design flow is a structured methodology for developing integrated circuits efficiently and effectively. It guides designers through key stages, including specification, design entry, synthesis, verification, layout, and fabrication. The flow aims to minimize design time while ensuring high-quality and reliable products. By breaking the process into manageable tasks, it helps focus on specific design aspects at each stage. This approach streamlines the workflow, reduces errors, and boosts team productivity.
 <details>
-  <summary>Typical design flow</summary>
+  <summary><b>Typical design flow</b></summary>
 
   <p align="center">
     <img src="https://github.com/user-attachments/assets/94bce051-0617-4c82-b17e-9c460a3ca3e8" width="250" />
@@ -295,6 +295,8 @@ Openlane has a configuration to select one of the two approaches to handle the a
 
 
 ### Section 3
+  [Directory Structure](directory_structure.md)
+
 ## Day 2 - Good floorplan vs bad floorplan and introduction to library cells
 ## Day 3 - Design library cell using Magic Layout and ngspice characterization
 ## Day 4 - Pre-Layout timing analysis and importance and good clock tree
