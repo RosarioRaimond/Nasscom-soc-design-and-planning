@@ -447,15 +447,11 @@ Percentage\ of\ DFF's = Flop\ Ratio * 100
 [Youtube link1](https://www.youtube.com/watch?v=EczW2IWdnOM)  
 [Youtube link2](https://www.youtube.com/watch?v=Vhyv0eq_mLU)  
 
-```bash
+  <p align="center">
+    <img src="https://github.com/user-attachments/assets/23c7746e-2c85-4dfe-a904-52546353311a" width="700" />
+  </p> 
 
-# Exit the OpenLANE flow interface
-exit
 
-# Exit the Docker container
-exit
-
-```
   
 
 ## Day 2 - Good floorplan vs bad floorplan and introduction to library cells
