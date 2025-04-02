@@ -324,6 +324,86 @@ prep -design picorv32a
 #After executing check that the runs directory is created in the picorv32a(<design_name>) directory
 
 ```
+<details>
+ <summary> Directory structure </summary>
+<p>Inside /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/02-04_16-06/ </p>
+```bash
+.
+├── cmds.log
+├── config.tcl
+├── log
+├── logs
+│   ├── 0-prep_runtime.txt
+│   ├── cts
+│   ├── cvc
+│   ├── floorplan
+│   ├── flow_summary.log
+│   ├── klayout
+│   ├── lvs
+│   ├── magic
+│   ├── placement
+│   ├── routing
+│   └── synthesis
+├── OPENLANE_VERSION
+├── PDK_SOURCES
+├── reports
+│   ├── cts
+│   ├── cvc
+│   ├── floorplan
+│   ├── klayout
+│   ├── lvs
+│   ├── magic
+│   ├── placement
+│   ├── routing
+│   └── synthesis
+├── results
+│   ├── cts
+│   │   └── merged_unpadded.lef -> ../../tmp/merged_unpadded.lef
+│   ├── cvc
+│   │   └── merged_unpadded.lef -> ../../tmp/merged_unpadded.lef
+│   ├── floorplan
+│   │   └── merged_unpadded.lef -> ../../tmp/merged_unpadded.lef
+│   ├── klayout
+│   │   └── merged_unpadded.lef -> ../../tmp/merged_unpadded.lef
+│   ├── lvs
+│   │   └── merged_unpadded.lef -> ../../tmp/merged_unpadded.lef
+│   ├── magic
+│   │   └── merged_unpadded.lef -> ../../tmp/merged_unpadded.lef
+│   ├── placement
+│   │   └── merged_unpadded.lef -> ../../tmp/merged_unpadded.lef
+│   ├── routing
+│   │   └── merged_unpadded.lef -> ../../tmp/merged_unpadded.lef
+│   └── synthesis
+│       └── merged_unpadded.lef -> ../../tmp/merged_unpadded.lef
+└── tmp
+    ├── cts
+    │   └── merged_unpadded.lef -> ../../tmp/merged_unpadded.lef
+    ├── cvc
+    │   └── merged_unpadded.lef -> ../../tmp/merged_unpadded.lef
+    ├── floorplan
+    │   └── merged_unpadded.lef -> ../../tmp/merged_unpadded.lef
+    ├── klayout
+    │   └── merged_unpadded.lef -> ../../tmp/merged_unpadded.lef
+    ├── lvs
+    │   └── merged_unpadded.lef -> ../../tmp/merged_unpadded.lef
+    ├── magic
+    │   └── merged_unpadded.lef -> ../../tmp/merged_unpadded.lef
+    ├── merged.lef
+    ├── merged_unpadded.lef
+    ├── met_layers_list.txt
+    ├── placement
+    │   └── merged_unpadded.lef -> ../../tmp/merged_unpadded.lef
+    ├── routing
+    │   └── merged_unpadded.lef -> ../../tmp/merged_unpadded.lef
+    ├── synthesis
+    │   └── merged_unpadded.lef -> ../../tmp/merged_unpadded.lef
+    ├── tracks_copy.info
+    ├── trimmed.lib
+    └── trimmed.lib.exclude.list
+
+```
+
+</details>
   <p align="center">
     <img src="https://github.com/user-attachments/assets/5e367506-be0c-494a-9527-986fa1a92b8e" width="600" />
   </p> 
