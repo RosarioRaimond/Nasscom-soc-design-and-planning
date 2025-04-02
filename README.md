@@ -423,9 +423,29 @@ run_synthesis
     <img src="https://github.com/user-attachments/assets/6afa12f1-e8ea-4d80-8d70-12b07fa8f5f0" width="700" />
   </p> 
 
-[OpenLANE Resource](https://github.com/efabless/openlane2)
-[Youtube link1](https://www.youtube.com/watch?v=EczW2IWdnOM)
-[Youtube link2](https://www.youtube.com/watch?v=Vhyv0eq_mLU)
+  <p align="center">
+    <img src="https://github.com/user-attachments/assets/475296c3-80eb-4f7d-8f70-e93b592db2e4" width="700" />
+  </p> 
+
+```math
+Flop\ Ratio = \frac{Number\ of\ D\ Flip\ Flops}{Total\ Number\ of\ Cells}  
+            = \frac{1613}{14876}  
+            = 0.1084296853993009  
+```
+<br />
+
+```math
+
+Percentage\ of\ DFF's = Flop\ Ratio * 100  
+                      = 0.1084296853993009 *100  
+                      = 10.84 %
+
+```
+<br />
+
+[OpenLANE Resource](https://github.com/efabless/openlane2)  
+[Youtube link1](https://www.youtube.com/watch?v=EczW2IWdnOM)  
+[Youtube link2](https://www.youtube.com/watch?v=Vhyv0eq_mLU)  
 
 ```bash
 
