@@ -402,11 +402,9 @@ prep -design picorv32a
     ├── trimmed.lib
     └── trimmed.lib.exclude.list
 
- <p>The config.tcl here is the final configuration that was used for the run. If you modify any of the variable mid flow, it will be updated in this file. This is a good checkpoint to verify effect of the changes. The cmds.log file takes a record of all the commands used in the flow. </p>
-
-
 ```
-
+ <p>The config.tcl here is the final configuration that was used for the run. If you modify any of the variable mid flow, it will be updated in this file. This is a good checkpoint to verify effect of the changes. The cmds.log file takes a record of all the commands used in the flow. </p>
+ 
 </details>
   <p align="center">
     <img src="https://github.com/user-attachments/assets/5e367506-be0c-494a-9527-986fa1a92b8e" width="600" />
